@@ -21,10 +21,12 @@ For a live demo of the theme, see at:
     - Title
     - Subtitle
     - Image
+    - Image border color
     - Navigation menu
     - Social icons
     - Last 'n' recent posts
     - Background color
+    - Font family
     - Font color
 
 ## Usage
@@ -89,11 +91,13 @@ copyright = "&copy; Copyright Year, Your Name"
   description = "Your meta description"      # Your meta description of the site
   header_title = "Your Name"                 # Your header title
   header_subtitle = "Your Creative Subtitle" # Your header subtitle
-  home_image = "/images/avatar.png"          # Path to header image starting from the static directory
+  home_image = "/images/avatar.png"          # Path to header image starting from the static directory (optional)
   recent_posts = 5                           # Max amount of recent posts to show
   mainSections = ["posts", "post", "blog"]   # Main sections to include in recent posts
   [params.style]                             # CSS style overrides
     backgroundColor = "#f8f9fa"
+    homeImageBorderColor = "#ffffff"
+    fontFamilyBase = "Helvetica Neue"        # First-choice font
     fontColor = "#212529"
   [[params.social]]
     fa_icon = "fab fa-github fa-1x"          # Font Awesome icon class
@@ -130,6 +134,8 @@ parameters:
 ```toml
 [params.style]
   backgroundColor = "#f8f9fa"
+  homeImageBorderColor = "#ffffff"
+  fontFamilyBase = "Helvetica Neue"
   fontColor = "#212529"
 ```
 
